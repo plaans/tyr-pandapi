@@ -12,21 +12,4 @@ class PandaPiPlanner(ApptainerPlanner):
         return "ppro-po-sat-gas-ff.sif"
 
 
-class PandaPiExponentialPlanner(PandaPiPlanner):
-    """The PandaPi planner configured to use exponential version of some problems."""
-
-
-class PandaPiLinearPlanner(PandaPiPlanner):
-    """The PandaPi planner configured to use linear version of some problems."""
-
-
-class PandaPiInsertionPlanner(PandaPiPlanner):
-    """The PandaPi planner configured to use task insertion version of some problems."""
-
-
-__all__ = [
-    "PandaPiPlanner",
-    "PandaPiExponentialPlanner",
-    "PandaPiInsertionPlanner",
-    "PandaPiLinearPlanner",
-]
+__all__ = ["PandaPiPlanner"]
